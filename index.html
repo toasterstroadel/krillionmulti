@@ -668,7 +668,7 @@ async function renderLB(){
 }
 /* ---------- serverless room transport (WebRTC via PeerJS), same shape as the hosted room API ---------- */
 function makeRoom(){
-  const MAXP=12;
+  const MAXP=34;
   function build(peer,selfId,isHost,conn){
     let mine={},mineT=Date.now(),others=new Map(),seen=new Map(),closed=false,timer=0;
     const hs=new Set(),cs=new Set();
